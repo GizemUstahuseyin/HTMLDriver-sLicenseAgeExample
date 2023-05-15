@@ -1,0 +1,23 @@
+<DOCTYPE! HTML>
+    <html>
+    <head>
+        <meta charset="utf-8" />
+        <title>EhliyetYasOrnegi</title>
+    </head>
+    <body>
+        <input type="text" name="yas" id="u_yas" />
+        <p id="yorum"></p>
+        <button type="button" onclick="yasOlc()">Tıkla!</button>
+        <script>
+            function yasOlc() {
+                var yas = parseInt(document.getElementById('u_yas').value);
+                if (yas < 18) {
+                    document.getElementById('yorum').innerHTML = "Daha gençsin.";
+                }
+                else {
+                    document.getElementById('yorum').innerHTML = "Artık ehliyet alabilicek yaştasın.";
+                }
+            }
+        </script>
+    </body>
+    </html>
